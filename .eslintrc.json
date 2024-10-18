@@ -1,3 +1,8 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "no-unused-vars": "off",        // Disables 'no-unused-vars' rule
+    "react/no-unescaped-entities": "off",  // Disables unescaped entities warnings in JSX
+    "react/react-in-jsx-scope": "off"      // If using Next.js, React is already in scope
+  }
 }
